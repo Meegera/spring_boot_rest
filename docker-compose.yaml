@@ -1,0 +1,9 @@
+version: "1"
+
+services:
+  app1:
+    build:
+      ./
+    image: "hw_app1"
+    ports:
+      - "8080:8080"
