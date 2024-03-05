@@ -32,9 +32,8 @@ http {
         }
 
         location /signin {
-            types {}
-            default_type text/html;
-            alias D:/nginx/nginx-1.24.0/html/signin.html;
+            index signin.html;
+            alias D:/nginx/nginx-1.24.0/html;
         }
 
         error_page 500 502 503 504  /50x.html;
